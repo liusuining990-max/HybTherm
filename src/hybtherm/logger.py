@@ -1,7 +1,7 @@
 """Record the firmware's serial output to a CSV log.
 
 Usage (real hardware):
-    python -m heatblock.logger --port /dev/ttyACM0 --out data/raw/run1.csv \
+    python -m hybtherm.logger --port /dev/ttyACM0 --out data/raw/run1.csv \
         --labels A1,D6,A6,H12,ambient --duration 3600
 
 The firmware prints comment lines starting with '#' (sensor addresses), then a
@@ -29,7 +29,7 @@ def record(ser, out_path: Path, labels: list[str], duration: float | None = None
     t0 = time.monotonic()
     wrote_header = False
     with open(out_path, "w", newline="") as f:
-        f.write("# heatblock-uniformity serial log\n")
+        f.write("# HybTherm serial log\n")
         while True:
             if duration is not None and time.monotonic() - t0 > duration:
                 break

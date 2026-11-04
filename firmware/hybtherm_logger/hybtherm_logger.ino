@@ -1,5 +1,5 @@
 /*
-  heatblock_logger.ino — multi-probe DS18B20 logger for heatblock-uniformity
+  hybtherm_logger.ino — multi-probe DS18B20 logger for HybTherm
 
   Hardware (not required to use the rest of this repository):
     * Arduino UNO R3 or compatible (5 V)

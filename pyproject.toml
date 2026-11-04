@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "heatblock-uniformity"
+name = "hybtherm"
 version = "0.1.0"
 description = "Thermal model, analysis pipeline and logging tools for checking temperature uniformity of laboratory heating blocks"
 readme = "README.md"
@@ -17,7 +17,7 @@ cad = ["cadquery>=2.4"]
 dev = ["pytest>=7", "pyserial>=3.5"]
 
 [project.scripts]
-heatblock-log = "heatblock.logger:main"
+hybtherm-log = "hybtherm.logger:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

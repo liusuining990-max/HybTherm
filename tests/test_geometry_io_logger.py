@@ -1,9 +1,9 @@
 import numpy as np
 import pytest
 
-from heatblock.geometry import BlockGeometry
-from heatblock.io import read_log, select, write_log
-from heatblock.logger import record
+from hybtherm.geometry import BlockGeometry
+from hybtherm.io import read_log, select, write_log
+from hybtherm.logger import record
 
 
 def test_well_grid():

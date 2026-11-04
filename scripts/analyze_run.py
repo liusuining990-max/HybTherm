@@ -6,7 +6,7 @@
         --block-probes A1,A6,D6,H12 --setpoint 65 --t-off 1800 \
         --out results/analysis_synthetic
 
-The same command works on a real log recorded with ``heatblock-log``.
+The same command works on a real log recorded with ``hybtherm-log``.
 Outputs: report.json and two figures in the --out folder.
 """
 
@@ -26,8 +26,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from heatblock.analysis import apply_offsets, calibration_offsets, fit_first_order, uniformity_metrics  # noqa: E402
-from heatblock.io import read_log, select  # noqa: E402
+from hybtherm.analysis import apply_offsets, calibration_offsets, fit_first_order, uniformity_metrics  # noqa: E402
+from hybtherm.io import read_log, select  # noqa: E402
 
 
 def main(argv=None):

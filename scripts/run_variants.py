@@ -26,9 +26,9 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from heatblock.analysis import fit_first_order, uniformity_metrics  # noqa: E402
-from heatblock.geometry import N_COLS, N_ROWS, ROWS  # noqa: E402
-from heatblock.model import Boundaries, Heater, SimConfig, lumped_parameters, simulate  # noqa: E402
+from hybtherm.analysis import fit_first_order, uniformity_metrics  # noqa: E402
+from hybtherm.geometry import N_COLS, N_ROWS, ROWS  # noqa: E402
+from hybtherm.model import Boundaries, Heater, SimConfig, lumped_parameters, simulate  # noqa: E402
 
 PROBES = ["A1", "A6", "D6", "H12"]
 FIG = ROOT / "docs" / "figures"

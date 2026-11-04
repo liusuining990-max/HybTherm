@@ -7,8 +7,8 @@ checks the code against an independent analytic result, not against itself.
 import numpy as np
 import pytest
 
-from heatblock.geometry import BlockGeometry
-from heatblock.model import (
+from hybtherm.geometry import BlockGeometry
+from hybtherm.model import (
     Boundaries,
     Heater,
     SimConfig,

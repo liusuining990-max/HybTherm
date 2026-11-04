@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from heatblock.analysis import apply_offsets, calibration_offsets, fit_first_order, uniformity_metrics
-from heatblock.synthetic import SensorModel, calibration_bath_log
+from hybtherm.analysis import apply_offsets, calibration_offsets, fit_first_order, uniformity_metrics
+from hybtherm.synthetic import SensorModel, calibration_bath_log
 
 
 def test_first_order_fit_recovers_tau():

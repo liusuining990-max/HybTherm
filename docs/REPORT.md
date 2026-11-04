@@ -1,4 +1,4 @@
-# Temperature uniformity of a 65 °C heating block: model, measurement pipeline and probe fixture
+# HybTherm: temperature uniformity of a 65 °C heating block — model, measurement pipeline and probe fixture
 
 **Project report, version 0.1 — November 2026**  
 **Author:** Suining Liu
@@ -21,11 +21,11 @@ This project asks three questions:
 
 | Part | Path | Purpose |
 |---|---|---|
-| Thermal model | `src/heatblock/model.py` | 3-D transient heat conduction with a PI-controlled heater |
-| Analysis | `src/heatblock/analysis.py` | probe calibration, uniformity metrics, first-order (τ) fits |
-| Synthetic data | `src/heatblock/synthetic.py` | what the probes would record, including offsets, lag, noise and quantisation |
-| Firmware | `firmware/heatblock_logger/` | Arduino sketch for up to 8 DS18B20 probes on one wire |
-| Logger | `src/heatblock/logger.py` | records the serial stream to CSV |
+| Thermal model | `src/hybtherm/model.py` | 3-D transient heat conduction with a PI-controlled heater |
+| Analysis | `src/hybtherm/analysis.py` | probe calibration, uniformity metrics, first-order (τ) fits |
+| Synthetic data | `src/hybtherm/synthetic.py` | what the probes would record, including offsets, lag, noise and quantisation |
+| Firmware | `firmware/hybtherm_logger/` | Arduino sketch for up to 8 DS18B20 probes on one wire |
+| Logger | `src/hybtherm/logger.py` | records the serial stream to CSV |
 | Probe fixture | `cad/probe_fixture.py` | parametric CadQuery model, exported to STEP and STL |
 | Tests | `tests/` | 15 tests, including analytic verification of the model |
 
@@ -160,10 +160,10 @@ A parametric CadQuery model (`cad/probe_fixture.py`, exported to `cad/out/`) hol
 
 ## 8. Using it with real hardware
 
-1. Build the logger: Arduino UNO, up to 8 DS18B20 probes on pin 2, one 4.7 kΩ pull-up (`firmware/heatblock_logger/`). The sketch has not yet been compiled or run on hardware.
+1. Build the logger: Arduino UNO, up to 8 DS18B20 probes on pin 2, one 4.7 kΩ pull-up (`firmware/hybtherm_logger/`). The sketch has not yet been compiled or run on hardware.
 2. Identify probes: warm one at a time by hand and note which column rises.
 3. Calibrate: all probes in one stirred, insulated water bath near 65 °C for 15 minutes.
-   `heatblock-log --port /dev/ttyACM0 --labels A1,A6,D6,H12,ambient --duration 900 --out data/raw/cal.csv`
+   `hybtherm-log --port /dev/ttyACM0 --labels A1,A6,D6,H12,ambient --duration 900 --out data/raw/cal.csv`
 4. Run: probes in the fixture, heat to 65 °C, hold 30 minutes, switch off, log the cool-down.
 5. Analyse:
    `python scripts/analyze_run.py --run data/raw/run.csv --cal data/raw/cal.csv --block-probes A1,A6,D6,H12 --setpoint 65 --t-off 1800 --out results/run1`

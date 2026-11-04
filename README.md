@@ -1,6 +1,6 @@
-# heatblock-uniformity
+# HybTherm
 
-Open tools for checking how evenly a laboratory heating block holds its temperature — for example a 65 °C block used for hybridization capture in NGS library preparation.
+**Hyb**ridization **Therm**al uniformity. Open tools for checking how evenly a laboratory heating block holds its temperature — for example a 65 °C block used for hybridization capture in NGS library preparation.
 
 - **3-D thermal model** of an aluminium block with a PI-controlled heater pad, verified against analytic solutions
 - **Analysis pipeline**: relative probe calibration, uniformity metrics, first-order time-constant fits
@@ -44,14 +44,14 @@ python scripts/analyze_run.py --run data/synthetic/baseline_run.csv \
   --setpoint 65 --t-off 1800 --out results/analysis_synthetic
 ```
 
-Record from hardware: `heatblock-log --port /dev/ttyACM0 --labels A1,A6,D6,H12,ambient --out data/raw/run.csv`
+Record from hardware: `hybtherm-log --port /dev/ttyACM0 --labels A1,A6,D6,H12,ambient --out data/raw/run.csv`
 
 ## Repository layout
 
 ```
-src/heatblock/   model.py  analysis.py  synthetic.py  logger.py  io.py  geometry.py
+src/hybtherm/   model.py  analysis.py  synthetic.py  logger.py  io.py  geometry.py
 scripts/         run_variants.py  make_synthetic.py  analyze_run.py  render_cad.py
-firmware/        heatblock_logger/heatblock_logger.ino
+firmware/        hybtherm_logger/hybtherm_logger.ino
 cad/             probe_fixture.py  out/ (STEP, STL, SVG)
 data/synthetic/  generated logs (clearly labelled, not measurements)
 docs/            REPORT.md  figures/

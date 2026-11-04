@@ -1,6 +1,6 @@
 # Handling problems behind this project
 
-The companion repository lists 20 kinds of process and handling problem in NGS testing workflows: [OpenNGS-Bench/docs/field-problems.md](https://github.com/liusuining990-max/OpenNGS-Bench/blob/main/docs/field-problems.md).
+The companion repository lists 20 kinds of process and handling problem in NGS testing workflows: [NGS-PokaYoke/docs/field-problems.md](https://github.com/liusuining990-max/NGS-PokaYoke/blob/main/docs/field-problems.md).
 
 The rows below concern the 65 °C hybridization-capture step, which is what this repository models and measures.
 
