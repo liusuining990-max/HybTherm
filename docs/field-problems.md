@@ -9,4 +9,6 @@ The rows below concern the 65 °C hybridization-capture step, which is what this
 | Capture performance | Capture efficiency varies from run to run; eluted library concentration is too low | Control library quality, hybridization time and **temperature**, blockers, input, wash stringency and amplification cycles | More consistent on-target rate | 65 °C balances specificity and yield: lower lets mismatched fragments stay bound, higher releases true targets |
 | Incubator performance | Instruments advertise temperature uniformity, but independent measurements are rarely published | Measure the block with calibrated probes | Known, not assumed, well-to-well differences | A single control sensor reports one point; wells at the edges run cooler |
 
+**Seen first-hand:** during my laboratory technician internship at Burning Rock (Irvine, California, May–June and July–August 2026), the library concentration after capture varied from run to run (first row). This repository looks at one factor behind that variation: block temperature.
+
 **The gap:** block temperature is named as a factor and advertised as a specification, but is rarely measured independently. This repository provides the model, the analysis pipeline and the logging tools to make that measurement.
