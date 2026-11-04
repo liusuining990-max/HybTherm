@@ -1,0 +1,30 @@
+{
+  "params_mm": {
+    "block_x": 120.0,
+    "block_y": 80.0,
+    "pitch": 9.0,
+    "probe_wells": [
+      "A1",
+      "A6",
+      "D6",
+      "H12"
+    ],
+    "probe_d": 6.0,
+    "hole_clearance": 0.3,
+    "boss_od": 12.0,
+    "boss_h": 14.0,
+    "frame_w": 8.0,
+    "frame_t": 4.0,
+    "strut_w": 6.0,
+    "lip_h": 5.0,
+    "lip_t": 2.0,
+    "lip_clearance": 0.25,
+    "corner_chamfer": 10.0
+  },
+  "bounding_box_mm": [
+    124.5,
+    84.5,
+    23.01
+  ],
+  "volume_mm3": 24795.7
+}

@@ -1,0 +1,367 @@
+{
+  "dx_m": 0.0025,
+  "probe_wells": [
+    "A1",
+    "A6",
+    "D6",
+    "H12"
+  ],
+  "variants": {
+    "baseline": {
+      "description": "Centre pad 60x40 mm, open top (h=10), bare sides (h=10)",
+      "all_96_wells": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 327.0,
+        "t_ready_s": 316.0,
+        "t_uniform_s": 369.0,
+        "overshoot_degC": 0.0,
+        "max_transient_spread_degC": 2.9564,
+        "steady_spread_degC": 0.4258,
+        "steady_bias_degC": -0.3118,
+        "steady_between_std_degC": 0.1225,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A12",
+        "hottest": "E6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "four_probes": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 331.0,
+        "t_ready_s": 316.0,
+        "t_uniform_s": 369.0,
+        "overshoot_degC": 0.0,
+        "max_transient_spread_degC": 2.9564,
+        "steady_spread_degC": 0.4258,
+        "steady_bias_degC": -0.345,
+        "steady_between_std_degC": 0.1774,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "cooldown_tau_s": {
+        "A1": 2144.5,
+        "A6": 2143.5,
+        "D6": 2143.1,
+        "H12": 2144.5
+      },
+      "lumped": {
+        "capacity_J_per_K": 464.4864,
+        "UA_W_per_K": 0.2168,
+        "tau_s": 2142.464945,
+        "biot": 0.000337,
+        "char_length_m": 0.007059
+      },
+      "control_overshoot_degC": 0.2035,
+      "steady_power_W": 9.235,
+      "runtime_s": 47.0
+    },
+    "full_pad": {
+      "description": "Heater pad enlarged to 110x70 mm",
+      "all_96_wells": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 294.0,
+        "t_ready_s": 280.0,
+        "t_uniform_s": 240.0,
+        "overshoot_degC": 0.0342,
+        "max_transient_spread_degC": 0.5115,
+        "steady_spread_degC": 0.135,
+        "steady_bias_degC": -0.0809,
+        "steady_between_std_degC": 0.0357,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "H1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "four_probes": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 295.0,
+        "t_ready_s": 280.0,
+        "t_uniform_s": 240.0,
+        "overshoot_degC": 0.0084,
+        "max_transient_spread_degC": 0.5115,
+        "steady_spread_degC": 0.135,
+        "steady_bias_degC": -0.1065,
+        "steady_between_std_degC": 0.0575,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "cooldown_tau_s": {
+        "A1": 2313.7,
+        "A6": 2313.6,
+        "D6": 2313.5,
+        "H12": 2313.7
+      },
+      "lumped": {
+        "capacity_J_per_K": 464.4864,
+        "UA_W_per_K": 0.2009,
+        "tau_s": 2312.027875,
+        "biot": 0.000312,
+        "char_length_m": 0.007059
+      },
+      "control_overshoot_degC": 0.1156,
+      "steady_power_W": 8.612,
+      "runtime_s": 47.9
+    },
+    "insulated_sides": {
+      "description": "10 mm foam on the four sides (h_sides 10 -> 2.3)",
+      "all_96_wells": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 312.0,
+        "t_ready_s": 302.0,
+        "t_uniform_s": 326.0,
+        "overshoot_degC": 0.0455,
+        "max_transient_spread_degC": 2.905,
+        "steady_spread_degC": 0.2689,
+        "steady_bias_degC": -0.2102,
+        "steady_between_std_degC": 0.0789,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "E7",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "four_probes": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 314.0,
+        "t_ready_s": 302.0,
+        "t_uniform_s": 326.0,
+        "overshoot_degC": 0.0291,
+        "max_transient_spread_degC": 2.905,
+        "steady_spread_degC": 0.2689,
+        "steady_bias_degC": -0.2264,
+        "steady_between_std_degC": 0.1117,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "cooldown_tau_s": {
+        "A1": 2994.7,
+        "A6": 2993.2,
+        "D6": 2992.6,
+        "H12": 2994.7
+      },
+      "lumped": {
+        "capacity_J_per_K": 464.4864,
+        "UA_W_per_K": 0.1552,
+        "tau_s": 2992.824742,
+        "biot": 0.000241,
+        "char_length_m": 0.007059
+      },
+      "control_overshoot_degC": 0.2663,
+      "steady_power_W": 6.634,
+      "runtime_s": 46.4
+    },
+    "lid": {
+      "description": "Insulated lid on top (h_top 10 -> 3)",
+      "all_96_wells": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 312.0,
+        "t_ready_s": 303.0,
+        "t_uniform_s": 336.0,
+        "overshoot_degC": 0.0349,
+        "max_transient_spread_degC": 2.9578,
+        "steady_spread_degC": 0.3237,
+        "steady_bias_degC": -0.2259,
+        "steady_between_std_degC": 0.0923,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "H1",
+        "hottest": "D7",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "four_probes": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 314.0,
+        "t_ready_s": 303.0,
+        "t_uniform_s": 336.0,
+        "overshoot_degC": 0.0064,
+        "max_transient_spread_degC": 2.9578,
+        "steady_spread_degC": 0.3237,
+        "steady_bias_degC": -0.254,
+        "steady_between_std_degC": 0.1351,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "cooldown_tau_s": {
+        "A1": 3108.0,
+        "A6": 3106.4,
+        "D6": 3105.8,
+        "H12": 3108.0
+      },
+      "lumped": {
+        "capacity_J_per_K": 464.4864,
+        "UA_W_per_K": 0.1496,
+        "tau_s": 3104.855615,
+        "biot": 0.000232,
+        "char_length_m": 0.007059
+      },
+      "control_overshoot_degC": 0.2716,
+      "steady_power_W": 6.386,
+      "runtime_s": 46.4
+    },
+    "draft": {
+      "description": "Air draft from a fan or hood (h_top 25, h_sides 15)",
+      "all_96_wells": {
+        "setpoint": 65.0,
+        "t_first_reach_s": null,
+        "t_ready_s": 387.0,
+        "t_uniform_s": null,
+        "overshoot_degC": 0.0,
+        "max_transient_spread_degC": 2.9863,
+        "steady_spread_degC": 0.7424,
+        "steady_bias_degC": -0.559,
+        "steady_between_std_degC": 0.2146,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D7",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "four_probes": {
+        "setpoint": 65.0,
+        "t_first_reach_s": null,
+        "t_ready_s": 387.0,
+        "t_uniform_s": null,
+        "overshoot_degC": 0.0,
+        "max_transient_spread_degC": 2.9863,
+        "steady_spread_degC": 0.7424,
+        "steady_bias_degC": -0.6138,
+        "steady_between_std_degC": 0.309,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "cooldown_tau_s": {
+        "A1": 1160.7,
+        "A6": 1160.0,
+        "D6": 1159.8,
+        "H12": 1160.7
+      },
+      "lumped": {
+        "capacity_J_per_K": 464.4864,
+        "UA_W_per_K": 0.4008,
+        "tau_s": 1158.898204,
+        "biot": 0.000623,
+        "char_length_m": 0.007059
+      },
+      "control_overshoot_degC": 0.0463,
+      "steady_power_W": 16.947,
+      "runtime_s": 48.6
+    },
+    "combined": {
+      "description": "Full pad + insulated sides + lid",
+      "all_96_wells": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 276.0,
+        "t_ready_s": 266.0,
+        "t_uniform_s": 0.0,
+        "overshoot_degC": 0.2489,
+        "max_transient_spread_degC": 0.4556,
+        "steady_spread_degC": 0.0413,
+        "steady_bias_degC": -0.0248,
+        "steady_between_std_degC": 0.011,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "H1",
+        "hottest": "D7",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "four_probes": {
+        "setpoint": 65.0,
+        "t_first_reach_s": 277.0,
+        "t_ready_s": 266.0,
+        "t_uniform_s": 0.0,
+        "overshoot_degC": 0.241,
+        "max_transient_spread_degC": 0.4556,
+        "steady_spread_degC": 0.0413,
+        "steady_bias_degC": -0.0326,
+        "steady_between_std_degC": 0.0176,
+        "steady_max_fluct_degC": 0.0,
+        "coldest": "A1",
+        "hottest": "D6",
+        "window_s": [
+          1500.0,
+          1800.0
+        ]
+      },
+      "cooldown_tau_s": {
+        "A1": 6443.9,
+        "A6": 6443.1,
+        "D6": 6442.9,
+        "H12": 6443.9
+      },
+      "lumped": {
+        "capacity_J_per_K": 464.4864,
+        "UA_W_per_K": 0.0721,
+        "tau_s": 6442.252427,
+        "biot": 0.000112,
+        "char_length_m": 0.007059
+      },
+      "control_overshoot_degC": 0.2747,
+      "steady_power_W": 3.098,
+      "runtime_s": 47.9
+    }
+  },
+  "grid_study": [
+    {
+      "dx_mm": 5.0,
+      "cells": 1536,
+      "steady_spread_degC": 0.429,
+      "max_transient_spread_degC": 2.9878,
+      "coldest": "A1",
+      "runtime_s": 0.5
+    },
+    {
+      "dx_mm": 2.5,
+      "cells": 12288,
+      "steady_spread_degC": 0.4253,
+      "max_transient_spread_degC": 2.9561,
+      "coldest": "A12",
+      "runtime_s": 10.8
+    },
+    {
+      "dx_mm": 1.667,
+      "cells": 41472,
+      "steady_spread_degC": 0.4247,
+      "max_transient_spread_degC": 2.95,
+      "coldest": "H12",
+      "runtime_s": 133.3
+    }
+  ]
+}

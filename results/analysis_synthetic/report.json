@@ -1,0 +1,95 @@
+{
+  "run": "data/synthetic/baseline_run.csv",
+  "block_probes": [
+    "A1",
+    "A6",
+    "D6",
+    "H12"
+  ],
+  "calibration": {
+    "reference": "probe-mean",
+    "offsets_degC": {
+      "A1": 0.3095,
+      "A6": 0.1179,
+      "D6": -0.2197,
+      "H12": -0.3981,
+      "ambient": 0.1904
+    },
+    "offset_sem_degC": {
+      "A1": 0.0011,
+      "A6": 0.0011,
+      "D6": 0.0011,
+      "H12": 0.0011,
+      "ambient": 0.001
+    },
+    "residual_std_degC": {
+      "A1": 0.0313,
+      "A6": 0.0322,
+      "D6": 0.0315,
+      "H12": 0.0314,
+      "ambient": 0.0304
+    }
+  },
+  "uniformity_uncorrected": {
+    "setpoint": 65.0,
+    "t_first_reach_s": 348.0,
+    "t_ready_s": 356.0,
+    "t_uniform_s": null,
+    "overshoot_degC": 0.0,
+    "max_transient_spread_degC": 3.125,
+    "steady_spread_degC": 0.7412,
+    "steady_bias_degC": -0.3935,
+    "steady_between_std_degC": 0.301,
+    "steady_max_fluct_degC": 0.0087,
+    "coldest": "H12",
+    "hottest": "A6",
+    "window_s": [
+      1500.0,
+      1800.0
+    ]
+  },
+  "uniformity_corrected": {
+    "setpoint": 65.0,
+    "t_first_reach_s": 343.0,
+    "t_ready_s": 328.0,
+    "t_uniform_s": 388.0,
+    "overshoot_degC": 0.0,
+    "max_transient_spread_degC": 2.9542,
+    "steady_spread_degC": 0.4287,
+    "steady_bias_degC": -0.3459,
+    "steady_between_std_degC": 0.1784,
+    "steady_max_fluct_degC": 0.0087,
+    "coldest": "H12",
+    "hottest": "D6",
+    "window_s": [
+      1500.0,
+      1800.0
+    ]
+  },
+  "cooldown_first_order_fit": {
+    "A1": {
+      "tau_s": 2146.4,
+      "tau_stderr_s": 0.7,
+      "T_inf_degC": 21.98,
+      "r2": 0.999986
+    },
+    "A6": {
+      "tau_s": 2145.4,
+      "tau_stderr_s": 0.6,
+      "T_inf_degC": 21.99,
+      "r2": 0.999987
+    },
+    "D6": {
+      "tau_s": 2143.0,
+      "tau_stderr_s": 0.6,
+      "T_inf_degC": 22.01,
+      "r2": 0.999988
+    },
+    "H12": {
+      "tau_s": 2146.9,
+      "tau_stderr_s": 0.7,
+      "T_inf_degC": 21.97,
+      "r2": 0.999986
+    }
+  }
+}
